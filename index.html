@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inference Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .result-container {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 30px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        .result-container img {
+            width: 300px;
+            margin-right: 20px;
+            border-radius: 4px;
+        }
+
+        .json-box {
+            background-color: #fff;
+            padding: 10px;
+            border: 1px solid #ddd;
+            overflow-x: auto;
+            max-width: 700px;
+        }
+
+        pre {
+            margin: 0;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Inference Results</h2>
+
+    {% if results %}
+        {% for entry in results %}
+            <div class="result-container">
+                <img src="{{ entry.image_path }}" alt="Analyzed Image">
+
+                <div class="json-box">
+                    <pre>
+Environment: {{ entry.result.get("environment", "N/A") }}
+Personnel Status: {{ entry.result.get("personnel_status", "N/A") }}
+Alerts: {{ entry.result.get("alerts", "None") }}
+
+{% if entry.result.get("environment_issues") %}
+Environment Issues:
+- {{ entry.result["environment_issues"] | join(", ") }}
+{% endif %}
+
+{% if entry.result.get("personnel_issues") %}
+Personnel Issues:
+- {{ entry.result["personnel_issues"] | join(", ") }}
+{% endif %}
+                    </pre>
+                </div>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>No results found yet. Please run the batch script to upload images.</p>
+    {% endif %}
+
+</body>
+</html>
