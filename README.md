@@ -31,8 +31,11 @@ Ensure the project folder has the following structure:
 2. put app.py, and batch.py file in the folder
 3. you have to make a another folder insie it and named it "templates" and put the index.html file in this folder
 4. make another folder named "test_images" and put all the images which you want to test through this system
+   
    e.g
+   
 VLM-image-recognition-system/
+
 ├── app.py
 
 ├── batch.py
@@ -42,15 +45,16 @@ VLM-image-recognition-system/
 
 ├── test_images/          ← You place your test images here
 
-## Run 
+## Run files
 Now all three files app.py, batch.py and index.html open in VS code
 
+## app.py 
 1.first run the app.py file through bash
 
   python3 app.py
 
 Keep it running 
-
+## batch.py
 2. Add another terminal and run batch.py through bash
    
    python3 batch.py
