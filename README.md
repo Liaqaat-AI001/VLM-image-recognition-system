@@ -57,6 +57,8 @@ Now all three files app.py, batch.py and index.html open in VS code
 1.first run the app.py file through bash
 
   python3 app.py
+  
+The model will auto-download from HuggingFace when `app.py` runs for the first time.
 
 Keep it running 
 ## batch.py
