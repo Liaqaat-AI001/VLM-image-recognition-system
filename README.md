@@ -46,11 +46,13 @@ VLM-image-recognition-system/
 Now all three files app.py, batch.py and index.html open in VS code
 
 1.first run the app.py file through bash
+
   python3 app.py
 
 Keep it running 
 
 2. Add another terminal and run batch.py through bash
+   
    python3 batch.py
 
 when you run this, it will ask you to open 
