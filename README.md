@@ -27,7 +27,11 @@ transformers
 Pillow
 ## Folder Setup
 Ensure the project folder has the following structure:
-and put the following files in the folders accordingly.
+1. You have to make a folder
+2. put app.py, and batch.py file in the folder
+3. you have to make a another folder insie it and named it "templates" and put the index.html file in this folder
+4. make another folder named "test_images" and put all the images which you want to test through this system
+   e.g
 VLM-image-recognition-system/
 ├── app.py
 
@@ -36,14 +40,28 @@ VLM-image-recognition-system/
 ├── templates/
 │   └── index.html
 
-├── static/
-│   └── images/           ← System saves analyzed images here
-
-├── temp_uploads/         ← Uploads are temporarily stored here
-
 ├── test_images/          ← You place your test images here
 
-├── uploaded_images/      
+##Run 
+Now all three files app.py, batch.py and index.html open in VS code
+
+1.first run the app.py file through bash
+  python3 app.py
+
+Keep it running 
+
+2. Add another terminal and run batch.py through bash
+   python3 batch.py
+
+when you run this, it will ask you to open 
+http://localhost:5000
+
+When you click on the link, you will see the results.
+
+
+
+
+
 
 
 
