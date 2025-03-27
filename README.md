@@ -42,7 +42,7 @@ VLM-image-recognition-system/
 
 ├── test_images/          ← You place your test images here
 
-##Run 
+## Run 
 Now all three files app.py, batch.py and index.html open in VS code
 
 1.first run the app.py file through bash
