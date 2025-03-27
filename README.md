@@ -19,19 +19,32 @@ This project is a demo system using a Vision-Language Model (VLM) to identify po
 
 ## To use the code we have to follow the following pattern 
 
-we have to make folder and place the files inside the folder as under.
+## Required Dependencies
+python 3.10
+Flask
+torch 2.3.1 
+transformers
+Pillow
+## Folder Setup
+Ensure the project folder has the following structure:
+and put the following files in the folders accordingly.
+VLM-image-recognition-system/
+├── app.py
 
-vlm-safety-detection/
+├── batch.py
 
-├── app.py                 # Flask backend + VLM inference
+├── templates/
+│   └── index.html
 
-├── batch.py               # CLI tool to upload test images
+├── static/
+│   └── images/           ← System saves analyzed images here
 
-├── templates/index.html   # HTML template for web frontend
+├── temp_uploads/         ← Uploads are temporarily stored here
 
-├── static/images/         # Folder to store uploaded display images
+├── test_images/          ← You place your test images here
 
-├── temp_uploads/          # Temporary holding folder for incoming images
+├── uploaded_images/      
 
-├── test_images/           # image dataset 
+
+
 
