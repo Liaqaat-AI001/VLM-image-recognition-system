@@ -17,14 +17,19 @@ This project is a demo system using a Vision-Language Model (VLM) to identify po
 
 ---
 
-## To use the code we have to follow the following pattern 
+## To use the code follow the following pattern 
 
 ## Required Dependencies
 python 3.10
+
 Flask
+
 torch 2.3.1 
+
 transformers
+
 Pillow
+
 ## Folder Setup
 Ensure the project folder has the following structure:
 1. You have to make a folder
