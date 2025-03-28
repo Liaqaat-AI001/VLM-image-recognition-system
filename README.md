@@ -30,16 +30,30 @@ transformers
 
 Pillow
 
+
+If Cloning repository not working the please follow the procedure below.
+
+## Download files
+Download the following three files.
+1. app.py
+2. batch.py
+3. index.html
+   
 ## Folder Setup
-Ensure the project folder has the following structure:
-1. You have to make a folder
-2. put app.py, and batch.py file in the folder
-3. you have to make a another folder insie it and named it "templates" and put the index.html file in this folder
-4. make another folder named "test_images" and put all the images which you want to test through this system
+
+
+1. You have to make one folder and inside the folder make two sub folders named **templates**' and "**test_images"**
+2. Put app.py and batch.py files in the main folder
    
-   e.g
+3. put the **index.html** file  inside **"templates"**
+ 
+4. Place your test dataset in the folder "**test_images**"
    
-VLM-image-recognition-system/
+. 
+For Example
+
+   
+**VLM-image-recognition-system** is main folder
 
 ├── app.py
 
@@ -51,10 +65,11 @@ VLM-image-recognition-system/
 ├── test_images/          ← You place your test images here
 
 ## Run files
-Now all three files app.py, batch.py and index.html open in VS code
+
+Now all three files, app.py, batch.py and index.html, open in VS Code
 
 ## app.py 
-1.first run the app.py file through bash
+1. First run the app.py file through bash
 
   python3 app.py
   
